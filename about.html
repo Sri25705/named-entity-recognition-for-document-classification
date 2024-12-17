@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About NER in Document Classification</title>
+    <link rel="stylesheet" href="/static/css/styles.css"> <!-- Add your custom CSS here -->
+</head>
+<body>
+    <header>
+        <h1>About Named Entity Recognition (NER) in Document Classification</h1>
+    </header>
+    <main>
+        <section>
+            <h2>What is Named Entity Recognition (NER)?</h2>
+            <p>Named Entity Recognition (NER) is a Natural Language Processing (NLP) technique that identifies and categorizes specific entities within a text. These entities may include names of people, organizations, locations, dates, and other predefined categories. NER is essential in extracting meaningful information from unstructured text data.</p>
+        </section>
+
+        <section>
+            <h2>How NER Works</h2>
+            <p>NER uses pre-trained language models, such as those available in <strong>SpaCy</strong>, to analyze text and identify entities. The model processes the text in several steps:</p>
+            <ol>
+                <li><strong>Tokenization:</strong> The text is split into smaller units called tokens, typically words or punctuation marks.</li>
+                <li><strong>Part-of-Speech Tagging:</strong> Each token is labeled with its grammatical role, such as noun, verb, or adjective.</li>
+                <li><strong>Entity Recognition:</strong> Using context and linguistic patterns, the model identifies named entities and assigns them to categories such as <em>PERSON</em>, <em>ORG</em>, or <em>GPE</em> (geopolitical entity).</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>NER in Document Classification</h2>
+            <p>Document classification involves categorizing documents based on their content. NER enhances this process by:</p>
+            <ul>
+                <li><strong>Extracting Key Information:</strong> Identifying entities that are relevant to specific categories.</li>
+                <li><strong>Reducing Noise:</strong> Filtering out irrelevant text and focusing on meaningful data.</li>
+                <li><strong>Improving Accuracy:</strong> Using extracted entities as features for classification models.</li>
+            </ul>
+            <p>For example, in a legal document classification task, NER can extract entities like case numbers, dates, and parties involved, which can help determine the document's category.</p>
+        </section>
+
+        <section>
+            <h2>Tools Used in This Application</h2>
+            <p>This application utilizes the <strong>SpaCy</strong> library, specifically its pre-trained <em>en_core_web_sm</em> model, for NER tasks. Additionally, tools like PyPDF2 and python-docx are used to extract text from documents before applying NER.</p>
+        </section>
+
+        <section>
+            <h2>Try It Yourself!</h2>
+            <p>Upload a document in PDF, DOCX, or TXT format using our <a href="/upload">upload page</a> to see how NER extracts entities and highlights key information in your documents.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Document Classification with NER. All rights reserved.</p>
+    </footer>
+</body>
+</html>
